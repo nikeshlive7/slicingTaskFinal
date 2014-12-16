@@ -1,0 +1,358 @@
+@charset "utf-8";
+/* CSS Document */
+
+.site-wrapper {
+	height:1561px;
+	width:1069px;
+    background:url(../images/background.png) 0 0 no-repeat;
+	margin:0 auto;
+	
+}
+/*header starts here.............................................................................................................................*/
+
+.header-wrapper {
+	font-family:Arial, Helvetica, sans-serif;
+	height:450px;
+	width:1069px;
+	background:red;
+	
+}
+.header-container {
+	height:189px;
+	width:1009px;
+	background:#594e4e;
+	padding:31px 30px 9px 30px;
+	position:relative;
+}
+.logo {
+	
+}
+.menu-wrapper {
+	height:80px;
+	margin-top:33px;
+	
+}
+.menu-container {
+	height:80px;
+	float:left;
+	
+}
+.search-wrapper {
+	margin-top:15px;
+	width:294px;
+	height:51px;
+	color:#366;
+	float:left;
+	background:#a49191;
+	padding-left:8px;
+}
+.search-wrapper input {
+	padding-left:13px;
+	padding-right:13px;
+	width:188px;
+	height:26px;
+	border:none;
+	float:left;
+	margin-top:13px;
+}
+.search-wrapper button {
+	width:64px;
+	height:51px;
+	border:none;
+	background:#2872e2 url(../images/search-icon.png) 13px 7px no-repeat;
+	float:right;
+	border-left:#594e4e 1px solid;
+}
+.banner {
+	height:191px;
+	width:1009px;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:17px;
+	padding-bottom:13px;
+	background:#a49191;
+	
+}
+.slider {
+	width:1009px;
+	height:191px;
+	overflow:hidden;
+	position:relative;
+	}
+	
+.slider ul {
+	position:absolute;
+	list-style:none;
+	width:10000px;
+}
+.slider ul li{
+	height:191px;
+	float:left;
+	position:relative;
+	}
+.slider ul li img {
+	width:1009px;
+	height:191px;
+	background:#003;
+}
+.slider ul li span {
+	position:absolute;
+	height:32px;
+	width:965px;
+	background:#330;
+	left:0px;
+	bottom:0px;
+	background:#f4609b;
+	font-size:37px;
+	line-height:24px;
+	padding:19px 22px;
+	color:#FFF;
+	z-index:10;
+	opacity:0.6;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+.left-nav{
+	top:32px;
+	left:7px;
+	height:65px;
+	width:65px;
+	background:url(../images/slider-nav-left-inactive.png) 0 0 no-repeat;
+	position:absolute;
+	border:none;
+	}
+.right-nav{
+	top:32px;
+	left:85px;
+	height:65px;
+	width:65px;
+	background:url(../images/slider-nav-right-active.png) 0 0 no-repeat;
+	position:absolute;
+	border:none;
+	}
+
+
+/*main container starts here-----------------------------------------------------------------------------------------------------------*/
+
+.main-container{
+	min-height:614px;
+	border-bottom:#b2b2b2 1px solid;
+	padding:21px 30px 24px;
+	background:#FFF;
+	opacity:0.5;
+	}
+	
+.main-top-container{
+	min-height:151px;
+	
+	
+	}
+.main-top-container-left{
+	font-family:Verdana, Geneva, sans-serif;
+	margin-left:22px;
+	width:533px;
+	float:left;
+	}
+.main-top-container-left h1 {
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+.main-top-container-left p {
+	font-size: 11px;
+	line-height: 16px;
+	margin-bottom: 18px;
+}
+
+
+.main-top-container-right{
+	padding-right:6px;
+	padding-top:4px;
+	float:right;
+	}
+	
+.main-content{
+	margin-top:58px;
+	min-height:405px;
+	
+	}
+.main-content ul {
+	height: 50px;
+	background:#FFF;
+}
+.main-content ul li {
+	float: left;
+	list-style-type: none;
+	min-width: 193px;
+	margin-left: 2px;
+	line-height: 44px;
+	text-align: center;
+	font-size: 13px;
+	color: white;
+	position:relative;
+}
+.main-content ul li.active {
+	margin-top: 7px;
+}
+
+
+.main-content-divider {
+	height: 10px;
+	width: 1009px;
+	background:url(../images/main-content-divider.png) 0 0 no-repeat;
+}
+.main-content ul li ul {
+	position:absolute;
+	min-height: 327px;
+	width: 1009px;
+}
+.main-content ul li ul li {
+	color:#000;
+	float: left;
+	list-style-type: none;
+	margin: 0px 28px 0px 28px;
+	height: 327px;
+	width: 280px;
+	position:relative;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height: 15px;
+}
+
+.main-content ul li ul li img {
+	height: 170px;
+	width: 280px;
+	margin-bottom:4px;
+}
+.main-content ul li ul li h2 {
+	font-size: 12px;
+	margin-bottom: 12px;
+	text-align:left;
+}
+.main-content ul li ul li p {
+	font-size: 11px;
+	text-align:left;
+	letter-spacing:1px;
+	min-height:76px;
+	
+}
+
+
+	
+/*footer starts here--------------------------------------------------------------------------------------------------------------------*/
+.footer{
+	min-height:396px;
+	opacity:0.5;
+	}
+.footer-content {
+	min-height: 210px;
+	padding: 40px 30px 40px 58px;
+	background: url(../images/footer-background-pattern.png);
+}
+
+.footer-content hr {
+	color:#3794a5;
+	border-bottom:#3794a5 1px solid;
+	margin-top: 20px;
+	margin-bottom: 18px;
+}
+.footer-content ul {
+	
+	list-style-type: none;
+}
+.footer-content ul li {
+	float: left;
+	margin-right: 24px;
+	width: 221px;
+}
+.footer-content ul li img {
+		float: left;
+}
+.footer-content ul li span {
+	font-size: 11px;
+	float: right;
+	width: 180px;
+	line-height: 15px;
+	word-spacing: 5px;
+}
+
+.footer-nav{
+	padding: 0px 30px 0px 58px;
+	height: 30px;
+}
+
+.footer-nav span {
+	line-height: 20px;
+	float: left;
+}
+.footer-nav ul {
+	float: left;
+	list-style-type: none;
+}
+.footer-nav ul li {
+	line-height: 20px;
+	margin-left: 10px;
+	margin-top: 1px;
+	font-size: 10px;
+	padding-left: 13px;
+	float: left;
+	
+	background-image:url(../images/nav-list-style.png);
+	background-repeat: no-repeat;
+}
+.footer-nav ul li a {
+	text-decoration: none;
+}
+
+
+.footer-info{
+	padding: 18px 30px 18px 69px;
+	min-height: 40px;
+	background-image: url(../images/footer-info-background.png);
+	}
+.footer-info form{
+	float: left;
+	width:130px;
+	height:14px;
+	}
+.footer-info ul {
+	height: 20px;
+	float:right;
+	list-style-type: none;
+}
+.footer-info ul li {
+	line-height: 15px;
+	font-size: 11px;
+	padding-left: 16px;
+	margin-left: 9px;
+	background: url(../images/nav-list-style.png) no-repeat;
+	float: left;
+}
+.footer-info ul li:first-child{
+	background:none;
+}
+.footer-info ul li a {
+	color: black;
+	text-decoration: none;
+}
+.footer-info span {
+	font-size: 11px;
+	float: right;
+}
+
+/*button classs*/
+.button{
+	float: left;
+	height:25px;
+	background:url(../images/button-bck.png) 0 0 no-repeat;
+	padding-left:9px;
+}
+.button a {
+	font-size: 11px;
+	line-height: 25px;
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding-right:9px;
+	background:url(../images/button-right.png) right 0 no-repeat;
+
+}
