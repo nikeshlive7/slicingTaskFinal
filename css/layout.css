@@ -2,19 +2,17 @@
 /* CSS Document */
 
 .site-wrapper {
-	height:1561px;
 	width:1069px;
-    background:url(../images/background.png) 0 0 no-repeat;
-	margin:0 auto;
+    margin:0 auto;
+	
 	
 }
 /*header starts here.............................................................................................................................*/
 
 .header-wrapper {
 	font-family:Arial, Helvetica, sans-serif;
-	height:450px;
 	width:1069px;
-	background:red;
+	
 	
 }
 .header-container {
@@ -29,7 +27,7 @@
 }
 .menu-wrapper {
 	height:80px;
-	margin-top:33px;
+	margin-top:32px;
 	
 }
 .menu-container {
@@ -136,15 +134,20 @@
 
 .main-container{
 	min-height:614px;
+	height:614px;
+	height:auto !important;
+	overflow:hidden;
 	border-bottom:#b2b2b2 1px solid;
 	padding:21px 30px 24px;
 	background:#FFF;
-	opacity:0.5;
+	
 	}
 	
 .main-top-container{
 	min-height:151px;
-	
+	height:151px;
+	height:auto !important;
+	overflow:hidden;
 	
 	}
 .main-top-container-left{
@@ -169,30 +172,60 @@
 	padding-right:6px;
 	padding-top:4px;
 	float:right;
+	width: 280px;
+
+	}
+.main-top-container-right.zoom-button {
+	display: block;
+	text-align: center;
+	padding: 23px 28px 0px 0px;
+}
+
+
+.text{
+	clear:both;
+	display:block;
+	padding: 92px 82px 14px 0px !important;
+	font-size: 30px;
+	color: #636363;
+	text-align: center;
 	}
 	
 .main-content{
 	margin-top:58px;
 	min-height:405px;
-	
+	height:405px;
+	height:auto !important;
+	position:relative;
+	overflow:hidden;
 	}
 .main-content ul {
+	min-height:50px;
 	height: 50px;
-	background:#FFF;
+	height:auto !important;
+	list-style:none;
+	position:relative;
+	
 }
+
 .main-content ul li {
 	float: left;
-	list-style-type: none;
 	min-width: 193px;
-	margin-left: 2px;
 	line-height: 44px;
 	text-align: center;
 	font-size: 13px;
 	color: white;
-	position:relative;
+	background-color:#3d8896;
+	margin-left:1px;
 }
-.main-content ul li.active {
-	margin-top: 7px;
+.active {
+	margin: 7px 2px 0px 2px !important;
+	
+}
+
+.inactive {
+	margin: 0px 1px !important;
+	
 }
 
 
@@ -202,15 +235,28 @@
 	background:url(../images/main-content-divider.png) 0 0 no-repeat;
 }
 .main-content ul li ul {
+	background-image:url(../images/main-content-divider.png), url(../images/main-content-divider.png);
+	background-position:left top, right bottom;
+	background-repeat:no-repeat, no-repeat;
 	position:absolute;
 	min-height: 327px;
+	height:327px;
+	height:auto !important;
+	overflow:hidden;
 	width: 1009px;
+	color:#FFF;
+	top:51px;
+	left:0px;
+	padding-top:10px;
+	padding-bottom:10px;
+	
 }
 .main-content ul li ul li {
 	color:#000;
+	background-color:#FFF;
 	float: left;
 	list-style-type: none;
-	margin: 0px 28px 0px 28px;
+	margin: 0px 28px 0px 28px !important;
 	height: 327px;
 	width: 280px;
 	position:relative;
@@ -219,7 +265,7 @@
 }
 
 .main-content ul li ul li img {
-	height: 170px;
+	height: 160px;
 	width: 280px;
 	margin-bottom:4px;
 }
@@ -241,13 +287,21 @@
 /*footer starts here--------------------------------------------------------------------------------------------------------------------*/
 .footer{
 	min-height:396px;
-	opacity:0.5;
+	height:396px;
+	height:auto !important;
+	overflow:hidden;
+	
 	}
 .footer-content {
-	min-height: 210px;
-	padding: 40px 30px 40px 58px;
+	min-height: 215px;
+	height:215px;
+	height:auto !important;
+	overflow:hidden;
+	padding: 35px 30px 40px 58px;
 	background: url(../images/footer-background-pattern.png);
 }
+
+
 
 .footer-content hr {
 	color:#3794a5;
@@ -267,6 +321,14 @@
 .footer-content ul li img {
 		float: left;
 }
+.footer-content ul li p {
+	font-size: 11px;
+	float: right;
+	width: 180px;
+	line-height: 15px;
+	word-spacing: 5px;
+}
+
 .footer-content ul li span {
 	font-size: 11px;
 	float: right;
@@ -278,6 +340,9 @@
 .footer-nav{
 	padding: 0px 30px 0px 58px;
 	height: 30px;
+	min-height:30px;
+	height:auto !important;
+	overflow:hidden;
 }
 
 .footer-nav span {
@@ -307,6 +372,8 @@
 .footer-info{
 	padding: 18px 30px 18px 69px;
 	min-height: 40px;
+	height:40px;
+	height:auto !important;
 	background-image: url(../images/footer-info-background.png);
 	}
 .footer-info form{
@@ -338,6 +405,34 @@
 	font-size: 11px;
 	float: right;
 }
+/*lightbox*/
+
+.lightbox {
+	position: absolute;
+	top: 13px;
+	left: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #e8e8e8;
+	width: 1008px;
+	height: 470px;
+	background-color: rgba(0,0,0,0.1);
+	padding: 35px 30px 35px 30px;
+}
+.lightbox-closebutton {
+	position: absolute;
+	top: 8px;
+	right: 22px;
+	width: 23px;
+	height: 26px;
+	background-image: url(../images/close-button.png);
+}
+.lightbox img {
+	width: 1009px;
+	height: 470px;
+	background: url(../images/image-zoomed.png);
+}
+
 
 /*button classs*/
 .button{
@@ -347,6 +442,7 @@
 	padding-left:9px;
 }
 .button a {
+	
 	font-size: 11px;
 	line-height: 25px;
 	display: block;
@@ -354,5 +450,28 @@
 	color: white;
 	padding-right:9px;
 	background:url(../images/button-right.png) right 0 no-repeat;
+
+}
+
+.buy-button{
+	
+	min-width:100px;
+	text-align: center;
+	padding: 0px 0px 0px 9px;
+	margin-left:50px;
+	float: left;
+	height:34px;
+	background:url(../images/buyButton_left.png) 0 0 no-repeat;
+	
+}
+.buy-button a {
+	
+	font-size: 18px;
+	line-height: 25px;
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding-right:9px;
+	background:url(../images/buyButton_right.png) right 0 no-repeat;
 
 }
